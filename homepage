@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephanie Castillo Portfolio</title>
+    <style>
+        h1 {
+            color: red;
+            font-size: 100px;
+            margin-bottom: 0px;
+        }
+
+        .round-button {
+            width: 100px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: lightblue;
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+    </style>
+
+    
+</head>
+
+<body>
+    <!--Header-->
+    <h1>Hello!</h1>
+    <p>I'm <span style="color: red;">Stephanie Castillo</span>, a Software Engineer who is passionate in frontend and backend development!</p>
+    <p>Outside of office hours, you can find me working on my psychological horror game, programming my budgeting website, or trying out new restaurants!</p>
+    
+    <!--Links-->
+    <button class="round-button">
+        <a href="https://www.linkedin.com/in/stephaniejcastillo/">LinkedIn</a>
+    </button>
+    <button class="round-button">
+        <a href="https://github.com/StailloG">GitHub</a>
+    </button>
+    <button class="round-button">
+        <a href="https://staillogaming.itch.io/">Itch.io</a>
+    </button>
+
+</body>
+</html>
