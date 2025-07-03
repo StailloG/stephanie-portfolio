@@ -27,9 +27,14 @@
             font-size: 20px;
         }
 
-    </style>
+        .column {
+            float: left;
+            width: 25%;
+        }
 
-    
+
+
+    </style>
 </head>
 
 <body>
@@ -48,6 +53,22 @@
     <button class="round-button">
         <a href="https://staillogaming.itch.io/">Itch.io</a>
     </button>
+
+    <!--Categories-->
+    <h2>Education</h2>
+    <h2>Work Experience</h2>
+    <h2>Projects</h2>
+    <h2>Technical Skills</h2>
+
+    <!--Working on Table-->
+    <div class="row">
+        <div class="column">Education</div>
+        <div class="column">Work Experience</div>
+        <div class="column">Projects</div>
+        <div class="column">Technical Skills</div>
+    </div>
+
+
 
 </body>
 </html>
