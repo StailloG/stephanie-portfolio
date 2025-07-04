@@ -32,7 +32,13 @@
             width: 25%;
         }
 
+        section {
+            display: none;
+        }
 
+        section:target {
+            display: block;
+        }
 
     </style>
 </head>
@@ -54,21 +60,112 @@
         <a href="https://staillogaming.itch.io/">Itch.io</a>
     </button>
 
-    <!--Categories-->
-    <h2>Education</h2>
-    <h2>Work Experience</h2>
-    <h2>Projects</h2>
-    <h2>Technical Skills</h2>
+    <!--Navigation Categories-->
+    <nav>
+        <a href="#about">
+            <P>About</P>
+        </a>
+        <a href="#education">
+            <p>Education</p>
+        </a>
+        <a href="#work">
+            <p>Work Experience</p>
+        </a>
+        <a href="#projects">
+            <p>Projects</p>
+        </a>
+        <a href="#technical">
+            <p>Technical Skilss</p>
+        </a>
+    </nav>
 
-    <!--Working on Table-->
+    <!--Navigation Section-->
+    <section id="about">
+        <p>Hello! My name is Stephanie Castillo, I am a Software Engineer with 2 years of professional experience specializing in both frontend and backend development.</p>
+        <p>I enjoy anything and everything that has to do with programming- from corporate projects, to game development, to creating tools to help people in their daily routines!
+            My mission is to utilize programming as a tool to help others and create a meaningful impact through technology.</p>
+        <p>I graduated with my Bachelor's degree in Computer Science at Florida International University, along with an Associate's degree in Computer Science at Broward College.</p>
+    </section>
+
+    <section id="education">
+        <p>Bachelor of Arts in Computer Science | Florida International Univeristy, Miami FL | 2022</p>
+        <p>Relevant coursework:  Net-Centric Computing, Artificial Intelligence, Software Engineering, Data Structures, Systems 
+           Programming, Computer Architecture, Programming I & II, Discrete Structures, Java Programming, Database Management</p>
+        <p>Member of Upsilon Pi Epsilon (Software Development, Game Development, and Tech Mentorship). Hosted an in-house 
+           showcase at the end of each semester to display the projects and achievements of each tech team.</p>
+        <p>Participated in FIU Global Game Jam 2021, utilizing Unity 2D and Visual Studios in C#. Gained experience deployying from Unity game engine to web browser.</p>
+        <p>Associate of Arts in Computer Science | Broward College, Davie FL | 2020</p>
+    </section>
+
+    <section id="work">
+        <!--Dell Full-Time-->
+        <p>Software Engineer | Dell Technologies</p>
+        <p>February 2023 - February 2025</p>
+        <ul>
+            <li>Developed and implemented new features for a B2B client portal with frontend and backend development utilizing C# and Angular.</li>
+            <li>Collaborated in Agile Sprints and contributed to sprint planning and reviews.</li>
+            <li>Debugged and resolved issues to enhance system performance, including reducing redundant executions to improve page load speed and implementing a tooltip for the Add-to-Compare feature to enhance user experience. TODO include gifs here?</li>
+            <li>Participated in the IT Development Program (ITDP) planning meetings that focused on business goals, AI technology, networking with industry professionals, and collaborated with various development departments across the company.</li>
+        </ul>
+        <!--Dell Internship-->
+        <p>Software Engineer Intern | Dell Technologies</p>
+        <p>June 2022 - August 2022</p>
+        <ul>
+            <li>Developed clean, maintainable code for API health checks and automated daily email reports to track API status to immediate team using C# and SMTP. This project helped reduce manual monitoring by eliminating the need for the team to individually check each API and their statuses.</li>
+            <li>Provided detailed project reports and milestone updates to the team and manager, ensuring the alighnment with business goals.</li>
+            <li>At the conclusion of the internship, I presented the results and key takeaways of my project to not only my immediate team, but to the different teams across ITDP.</li>
+        </ul>
+        <!--iD Tech-->
+        <p>Tech Instructor | iD Tech</p>
+        <p>April 2022 - June 2022</p>
+        <ul>
+            <li>Taught game development and programming to elementary school students utilizing hands-on projects.</li>
+            <li>Designed and delivered engaging lessons utilizing Unity and C# for Game development and using Java and C# for programming fundamentals.</li>
+            <li>Provided one-on-one support to help students debug code, develop projects, and build confidence in STEM.</li>
+        </ul>
+        <!--Miami Management-->
+        <p>Access Control | Miami Management</p>
+        <p>January 2018 - August 2021</p>
+        <ul>
+            <li>Verified identification of employees and visitors to maintain safety and site security.</li>
+            <li>Professionally greeted guests to create a welcoming environment while upholding strict security protocols.</li>
+            <li>Enforced access restrictions and safely escorted unauthorized individuals from the premise.</li>
+            <li>Responded to emergency situations and contacted law enforcements when necessary.</li>
+            <li>Documented incidents including property damage, theft, and unusual activity in detailed reports.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <p>Here are my game development projects and gifs.</p>
+    </section>
+
+    <section id="technical">
+        <p>Programming Languages:</p>
+        <p>C# Java TypeScript JavaScript C++ Python C</p>
+
+        <p>Web & Frameworks:</p>
+        <p>Angular HTML Node.js CSS/SCSS</p>
+
+        <p>Tools & Software</p>
+        <p>Visual Studios, Visual Studio Code, Eclipse Git GitHub GitLab Postman</p>
+
+        <p>Clouds & Devops:</p>
+        <p>CI/CD</p>
+
+        <p>Other Technologies:</p>
+        <p>Unity (2D & 3D) Blender, Adobe Premiere Pro, Photoshop, Clip Studio, Unreal Engine</p>
+
+        <p>Porductivity & Office Tools:</p>
+        <p>Microsoft Word, PowerPoint, Excel</p>
+    </section>
+
+    <!--Working on Table
     <div class="row">
         <div class="column">Education</div>
         <div class="column">Work Experience</div>
         <div class="column">Projects</div>
         <div class="column">Technical Skills</div>
-    </div>
-
-
+    </div>-->
 
 </body>
 </html>
