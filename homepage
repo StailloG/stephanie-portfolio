@@ -11,11 +11,15 @@
             margin-bottom: 0px;
         }
 
+        body {
+            background-color: #F2F2F2;
+        }
+
         .round-button {
             width: 100px;
             height: 50px;
             border-radius: 100%;
-            background-color: #402921;
+            background-color: #8C6C61;
             border: none;
             color: white;
             text-align: center;
@@ -29,6 +33,7 @@
 
         p {
             font-size: 20px;
+            color: #402921;
         }
 
         .column {
@@ -44,13 +49,15 @@
             display: block;
         }
 
-        /*background color to top navigation*/
+        /*top navigation color*/
         .topnav {
             background-color: #D9B5AD;
             overflow: hidden;
+            max-width: 1100px;
+            margin: 10px -10px;
         }
 
-        /*style the links/text inside the navigation bar*/
+        /*navigation bar style/links/text*/
         .topnav a {
             float: left;
             color: white;
@@ -60,22 +67,31 @@
             font-size: 17px;
         }
 
-        /*change color of the links on hover*/
+        /*color of the links on hover*/
         .topnav a:hover {
-            background-color: #8C6C61;
+            background-color: #734939;
             color: black;
         }
 
-        /*add a color to the active/curr link*/
+        /*active/current link color*/
         .topnav a.active {
-            background-color: #8C6C61;
+            background-color: #734939;
             color: black;
+        }
+
+        .content-box {
+            background-color: #D9B5AD;
+            margin: 10px -10px;
+            padding: 20px 40px;
+            width: 100%;
+            max-width: 1000px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
     </style>
 </head>
 
-<body style="background-color: #F2F2F2;">
+<body>
     <!--Header-->
     <h1>Hello!</h1>
     <p>I'm <span style="color: #8C6C61;">Stephanie Castillo</span>, a Software Engineer who is passionate in frontend and backend development!</p>
@@ -101,35 +117,18 @@
         <a href="#projects">Projects</a>
     </nav>
 
-    <!--Navigation Categories
-    <nav>
-        <a href="#about">
-            <P>About</P>
-        </a>
-        <a href="#education">
-            <p>Education</p>
-        </a>
-        <a href="#work">
-            <p>Work Experience</p>
-        </a>
-        <a href="#projects">
-            <p>Projects</p>
-        </a>
-        <a href="#technical">
-            <p>Technical Skilss</p>
-        </a>
-    </nav>-->
-
     <!--Navigation Section-->
-    <section id="about">
+    <section id="about" class="content-box">
+        <h2>About Me</h2>
         <p>Hello! My name is Stephanie Castillo, I am a Software Engineer with 2 years of professional experience specializing in both frontend and backend development.</p>
         <p>I enjoy anything and everything that has to do with programming- from corporate projects, to game development, to creating tools to help people in their daily routines!
             My mission is to utilize programming as a tool to help others and create a meaningful impact through technology.</p>
         <p>I graduated with my Bachelor's degree in Computer Science at Florida International University, along with an Associate's degree in Computer Science at Broward College.</p>
     </section>
 
-    <section id="education">
-        <p>Bachelor of Arts in Computer Science | Florida International Univeristy, Miami FL | 2022</p>
+    <section id="education" class="content-box">
+        <h2>Education</h2>
+        <h3>Bachelor of Arts in Computer Science | Florida International Univeristy, Miami FL | 2022</h3>
         <p>Relevant coursework:  Net-Centric Computing, Artificial Intelligence, Software Engineering, Data Structures, Systems 
            Programming, Computer Architecture, Programming I & II, Discrete Structures, Java Programming, Database Management</p>
         <p>Member of Upsilon Pi Epsilon (Software Development, Game Development, and Tech Mentorship). Hosted an in-house 
@@ -138,9 +137,10 @@
         <p>Associate of Arts in Computer Science | Broward College, Davie FL | 2020</p>
     </section>
 
-    <section id="work">
+    <section id="work" class="content-box">
         <!--Dell Full-Time-->
-        <p>Software Engineer | Dell Technologies</p>
+        <h2>Work Experience</h2>
+        <h3>Software Engineer | Dell Technologies</h3>
         <p>February 2023 - February 2025</p>
         <ul>
             <li>Developed and implemented new features for a B2B client portal with frontend and backend development utilizing C# and Angular.</li>
@@ -149,7 +149,7 @@
             <li>Participated in the IT Development Program (ITDP) planning meetings that focused on business goals, AI technology, networking with industry professionals, and collaborated with various development departments across the company.</li>
         </ul>
         <!--Dell Internship-->
-        <p>Software Engineer Intern | Dell Technologies</p>
+        <h3>Software Engineer Intern | Dell Technologies</h3>
         <p>June 2022 - August 2022</p>
         <ul>
             <li>Developed clean, maintainable code for API health checks and automated daily email reports to track API status to immediate team using C# and SMTP. This project helped reduce manual monitoring by eliminating the need for the team to individually check each API and their statuses.</li>
@@ -157,7 +157,7 @@
             <li>At the conclusion of the internship, I presented the results and key takeaways of my project to not only my immediate team, but to the different teams across ITDP.</li>
         </ul>
         <!--iD Tech-->
-        <p>Tech Instructor | iD Tech</p>
+        <h3>Tech Instructor | iD Tech</h3>
         <p>April 2022 - June 2022</p>
         <ul>
             <li>Taught game development and programming to elementary school students utilizing hands-on projects.</li>
@@ -165,7 +165,7 @@
             <li>Provided one-on-one support to help students debug code, develop projects, and build confidence in STEM.</li>
         </ul>
         <!--Miami Management-->
-        <p>Access Control | Miami Management</p>
+        <h3>Access Control | Miami Management</h3>
         <p>January 2018 - August 2021</p>
         <ul>
             <li>Verified identification of employees and visitors to maintain safety and site security.</li>
@@ -176,27 +176,29 @@
         </ul>
     </section>
 
-    <section id="skills">
-        <p>Programming Languages:</p>
+    <section id="skills" class="content-box">
+        <h2>Skills</h2>
+        <h3>Programming Languages:</h3>
         <p>C# Java TypeScript JavaScript C++ Python C</p>
 
-        <p>Web & Frameworks:</p>
+        <h3>Web & Frameworks:</h3>
         <p>Angular HTML Node.js CSS/SCSS</p>
 
-        <p>Tools & Software</p>
+        <h3>Tools & Software</h3>
         <p>Visual Studios, Visual Studio Code, Eclipse Git GitHub GitLab Postman</p>
 
-        <p>Clouds & Devops:</p>
+        <h3>Clouds & Devops:</h3>
         <p>CI/CD</p>
 
-        <p>Other Technologies:</p>
+        <h3>Other Technologies:</h3>
         <p>Unity (2D & 3D) Blender, Adobe Premiere Pro, Photoshop, Clip Studio, Unreal Engine</p>
 
-        <p>Porductivity & Office Tools:</p>
+        <h3>Porductivity & Office Tools:</h3>
         <p>Microsoft Word, PowerPoint, Excel</p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="content-box">
+        <h2>Projects</h2>
         <p>Here are my game development projects and gifs.</p>
     </section>
 
