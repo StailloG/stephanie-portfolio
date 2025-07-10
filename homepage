@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stephanie Castillo Portfolio</title>
+
+    <!--Open Sans Gooogle Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
     <style>
         h1 {
             color: #D9B5AD;
@@ -13,6 +19,7 @@
 
         body {
             background-color: #F2F2F2;
+            font-family: "Open-Sans", sans-serif;
         }
 
         .round-button {
@@ -34,6 +41,7 @@
         p {
             font-size: 20px;
             color: #402921;
+            font-family: "Open-Sans", sans-serif;
         }
 
         .column {
@@ -53,10 +61,10 @@
         .topnav {
             background-color: #D9B5AD;
             overflow: hidden;
-            max-width: 1100px;
+            width: 100%;
+            /*max-width: 1100px;*/
             margin: 10px -10px;
         }
-
         /*navigation bar style/links/text*/
         .topnav a {
             float: left;
@@ -66,13 +74,11 @@
             text-decoration: none;
             font-size: 17px;
         }
-
         /*color of the links on hover*/
         .topnav a:hover {
             background-color: #734939;
             color: black;
         }
-
         /*active/current link color*/
         .topnav a.active {
             background-color: #734939;
@@ -84,18 +90,57 @@
             margin: 10px -10px;
             padding: 20px 40px;
             width: 100%;
-            max-width: 1000px;
+            /*max-width: 1000px;*/
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
+        .intro-img img {
+            width: 400px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 40px 60px;
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .gif-size {
+            width: 400px;
+            height: 200px;
+            margin-right: 10px;
+        }
+
+        .project-card {
+            margin: 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
     </style>
 </head>
 
 <body>
     <!--Header-->
-    <h1>Hello!</h1>
-    <p>I'm <span style="color: #8C6C61;">Stephanie Castillo</span>, a Software Engineer who is passionate in frontend and backend development!</p>
-    <p>Outside of office hours, you can find me working on my psychological horror game, programming my budgeting website, or trying out new restaurants!</p>
+    <header class="header">
+        <div class="header-text">
+            <h1>Hello!</h1>
+            <p>I'm <span style="color: #8C6C61;">Stephanie Castillo</span>, a Software Engineer who is passionate in frontend and backend development!</p>
+            <p>Outside of office hours, you can find me working on my psychological horror game, programming my budgeting website, or trying out new restaurants!</p>
+        </div>
+        <div class="intro-img">
+            <img src="my-picture.png" alt="Stephanie Professional Headshot" />
+        </div>
+    </header>
     
     <!--Contact Links-->
     <button class="round-button">
@@ -125,7 +170,6 @@
             My mission is to utilize programming as a tool to help others and create a meaningful impact through technology.</p>
         <p>I graduated with my Bachelor's degree in Computer Science at Florida International University, along with an Associate's degree in Computer Science at Broward College.</p>
     </section>
-
     <section id="education" class="content-box">
         <h2>Education</h2>
         <h3>Bachelor of Arts in Computer Science | Florida International Univeristy, Miami FL | 2022</h3>
@@ -136,7 +180,6 @@
         <p>Participated in FIU Global Game Jam 2021, utilizing Unity 2D and Visual Studios in C#. Gained experience deployying from Unity game engine to web browser.</p>
         <p>Associate of Arts in Computer Science | Broward College, Davie FL | 2020</p>
     </section>
-
     <section id="work" class="content-box">
         <!--Dell Full-Time-->
         <h2>Work Experience</h2>
@@ -175,7 +218,6 @@
             <li>Documented incidents including property damage, theft, and unusual activity in detailed reports.</li>
         </ul>
     </section>
-
     <section id="skills" class="content-box">
         <h2>Skills</h2>
         <h3>Programming Languages:</h3>
@@ -196,10 +238,19 @@
         <h3>Porductivity & Office Tools:</h3>
         <p>Microsoft Word, PowerPoint, Excel</p>
     </section>
-
     <section id="projects" class="content-box">
         <h2>Projects</h2>
-        <p>Here are my game development projects and gifs.</p>
+        <h3 style="margin: 0;">Astrophobia</h3>
+        <div class="project-card">
+            <img src="media/astrophobia.gif" alt="Project-Astrophobia-GIF" class="gif-size">
+            <p style="margin: 0;">Astrophobia is a bite-sized horror game where the player is camping, but the stars are not what they seem.. The storyline was based on a personal experience seeing the night sky with no light pollution for the first time. Created using Unity, Blender, and C# in Visual Studios.</p>
+        </div>
+        <h3 style="margin: 0;">Stick Fig FPS</h3>
+        <div class="project-card">
+            <img src="media/stick-fig-fps.gif" alt="Project-Stick-Fig-FPS-GIF" class="gif-size">
+            <p style="margin: 0;">Stick Fig FPS is an arcade first-person shooter where the goal is to "erase" paper enemies. I created a variety of hand-drawn backgrounds and enemies for each level. Created using Unity, Adobe Photoshop, and  C# in Visual Studios.</p>
+        </div>
+        
     </section>
 
 </body>
