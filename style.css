@@ -89,12 +89,7 @@
             width: 400px;
             height: 400px;
             border-radius: 50%;
-<<<<<<< HEAD
             box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
-=======
-            /*border: 5px solid pink;
-            background-color: pink;*/
->>>>>>> aa2bd94809da32d989b71e239f9f06335f94bca1
             object-fit: cover;
         }
 
@@ -126,8 +121,4 @@
 
         .work-date-format {
             margin-bottom: -15px;
-<<<<<<< HEAD
         }
-=======
-        }
->>>>>>> aa2bd94809da32d989b71e239f9f06335f94bca1
