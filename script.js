@@ -21,8 +21,4 @@ document.addEventListener("DOMContentLoaded", function () {
                     targetSection.classList.add("active");
                 });
             })
-<<<<<<< HEAD
         });
-=======
-        });
->>>>>>> aa2bd94809da32d989b71e239f9f06335f94bca1
