@@ -63,7 +63,7 @@
             overflow: hidden;
             width: 100%;
             /*max-width: 1100px;*/
-            margin: 10px -10px;
+            margin: 10px -10px 0 -10px;
         }
         /*navigation bar style/links/text*/
         .topnav a {
@@ -86,18 +86,25 @@
         }
 
         .content-box {
-            background-color: #D9B5AD;
-            margin: 10px -10px;
+            background-color: #E8CEC8;
+            margin: 0px -10px;
             padding: 20px 40px;
             width: 100%;
             /*max-width: 1000px;*/
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+        .content-box.active {
+            display: block;
         }
 
         .intro-img img {
             width: 400px;
-            height: auto;
-            flex-shrink: 0;
+            height: 400px;
+            border-radius: 50%;
+            /*border: 5px solid pink;
+            background-color: pink;*/
+            object-fit: cover;
         }
 
         .header {
@@ -113,12 +120,12 @@
             min-width: 300px;
         }
 
+        /*Projects GIFS*/
         .gif-size {
             width: 400px;
             height: 200px;
             margin-right: 10px;
         }
-
         .project-card {
             margin: 0;
             margin-bottom: 10px;
@@ -154,7 +161,7 @@
     </button>
 
     <!--Navigation Bar-->
-    <nav class="topnav">
+    <nav class="topnav" id="topnav">
         <a class="active" href="#about">About</a>
         <a href="#education">Education</a>
         <a href="#work">Work</a>
@@ -163,25 +170,25 @@
     </nav>
 
     <!--Navigation Section-->
-    <section id="about" class="content-box">
+    <section id="about" class="content-box active">
         <h2>About Me</h2>
-        <p>Hello! My name is Stephanie Castillo, I am a Software Engineer with 2 years of professional experience specializing in both frontend and backend development.</p>
-        <p>I enjoy anything and everything that has to do with programming- from corporate projects, to game development, to creating tools to help people in their daily routines!
-            My mission is to utilize programming as a tool to help others and create a meaningful impact through technology.</p>
-        <p>I graduated with my Bachelor's degree in Computer Science at Florida International University, along with an Associate's degree in Computer Science at Broward College.</p>
+        <p>Hello! My name is Stephanie Castillo, I am a Software Engineer with 2 years of professional experience specializing in frontend, backend, and full-stack.
+            At home, I'm an Indie Game Developer!</p>
+        <p>I enjoy anything and everything that has to do with programming- from creating tools that help internal users through corporate projects, to entertainment through game development!
+            I bring ideas to life through interactive digital experiences that inspire and creates a meaningful impact to others. </p>
+        <p>Check out the other categories my portfolio has to offer for more information about me!</p>
     </section>
     <section id="education" class="content-box">
         <h2>Education</h2>
         <h3>Bachelor of Arts in Computer Science | Florida International Univeristy, Miami FL | 2022</h3>
-        <p>Relevant coursework:  Net-Centric Computing, Artificial Intelligence, Software Engineering, Data Structures, Systems 
-           Programming, Computer Architecture, Programming I & II, Discrete Structures, Java Programming, Database Management</p>
-        <p>Member of Upsilon Pi Epsilon (Software Development, Game Development, and Tech Mentorship). Hosted an in-house 
-           showcase at the end of each semester to display the projects and achievements of each tech team.</p>
-        <p>Participated in FIU Global Game Jam 2021, utilizing Unity 2D and Visual Studios in C#. Gained experience deployying from Unity game engine to web browser.</p>
-        <p>Associate of Arts in Computer Science | Broward College, Davie FL | 2020</p>
+        <ul>
+            <li>Relevant coursework:  Net-Centric Computing, Artificial Intelligence, Software Engineering, Data Structures, Systems Programming, Computer Architecture, Programming I & II, Discrete Structures, Java Programming, Database Management</li>
+            <li>Member of Upsilon Pi Epsilon (UPE) for Software Development, Game Development, and Tech Mentorship. Hosted an in-house showcase at the end of each semester to display the projects and achievements of each tech team</li>
+            <li>Participated in FIU Global Game Jam 2021, utilizing Unity 2D and Visual Studios in C#. Gained experience deployying from Unity game engine to web browser</li>
+        </ul>
+        <h3>Associate of Arts in Computer Science | Broward College, Davie FL | 2020</h3>
     </section>
     <section id="work" class="content-box">
-        <!--Dell Full-Time-->
         <h2>Work Experience</h2>
         <h3>Software Engineer | Dell Technologies</h3>
         <p>February 2023 - February 2025</p>
@@ -191,7 +198,6 @@
             <li>Debugged and resolved issues to enhance system performance, including reducing redundant executions to improve page load speed and implementing a tooltip for the Add-to-Compare feature to enhance user experience. TODO include gifs here?</li>
             <li>Participated in the IT Development Program (ITDP) planning meetings that focused on business goals, AI technology, networking with industry professionals, and collaborated with various development departments across the company.</li>
         </ul>
-        <!--Dell Internship-->
         <h3>Software Engineer Intern | Dell Technologies</h3>
         <p>June 2022 - August 2022</p>
         <ul>
@@ -199,7 +205,6 @@
             <li>Provided detailed project reports and milestone updates to the team and manager, ensuring the alighnment with business goals.</li>
             <li>At the conclusion of the internship, I presented the results and key takeaways of my project to not only my immediate team, but to the different teams across ITDP.</li>
         </ul>
-        <!--iD Tech-->
         <h3>Tech Instructor | iD Tech</h3>
         <p>April 2022 - June 2022</p>
         <ul>
@@ -207,7 +212,6 @@
             <li>Designed and delivered engaging lessons utilizing Unity and C# for Game development and using Java and C# for programming fundamentals.</li>
             <li>Provided one-on-one support to help students debug code, develop projects, and build confidence in STEM.</li>
         </ul>
-        <!--Miami Management-->
         <h3>Access Control | Miami Management</h3>
         <p>January 2018 - August 2021</p>
         <ul>
@@ -250,8 +254,33 @@
             <img src="media/stick-fig-fps.gif" alt="Project-Stick-Fig-FPS-GIF" class="gif-size">
             <p style="margin: 0;">Stick Fig FPS is an arcade first-person shooter where the goal is to "erase" paper enemies. I created a variety of hand-drawn backgrounds and enemies for each level. Created using Unity, Adobe Photoshop, and  C# in Visual Studios.</p>
         </div>
-        
     </section>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".topnav a");
+            const contentBoxes = document.querySelectorAll(".content-box");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    //remove 'active' from all nav links
+                    navLinks.forEach(nav => nav.classList.remove("active"));
+                    
+                    // Add "active" to clicked link
+                    this.classList.add("active");
+
+                    // Hide all content boxes
+                    contentBoxes.forEach(box => box.classList.remove("active"));
+
+                    // Get target section from href
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    targetSection.classList.add("active");
+                });
+            })
+        });
+    </script>
 </body>
 </html>
