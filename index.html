@@ -11,13 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
+<style>
+    [data-typewriter] {
+        font-size: 1;
+        height: 6rem;
+        border-right: .2rem solid transparent;
+        padding: 0;
+        color: #b2967d;
+    }
+
+    [data-typewriter]:not(.typing){
+        animation: blink-cursor 1.1s step-end infinite;
+    }
+
+    @keyframes blink-cursor {
+        0%,
+        100% {
+            border-color: transparent
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+</style>
+
 <body>
     <!--Header-->
     <header class="header">
         <div class="header-text">
             <h1>Hello!</h1>
-            <p>I'm <span style="color: #8C6C61;">Stephanie Castillo</span>, a Software Engineer who is passionate in frontend and backend development!</p>
-            <p>Outside of office hours, you can find me working on my psychological horror game, programming my budgeting website, or trying out new restaurants!</p>
+            <p>I'm <span style="color: #b2967d;">Stephanie Castillo</span>, a Software Engineer who is passionate in <span data-typewriter="learning,teaching,creating,entertaining"></span> <span>through tech!</span>
         </div>
         <div class="intro-img">
             <img src="Media/my-headshot.png" alt="Stephanie Professional Headshot"/>
