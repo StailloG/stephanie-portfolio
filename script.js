@@ -65,10 +65,6 @@ class Typewriter {
                 if(this.repeat) {
                     await this.initTyping();
                 }
-                else
-                {
-                    this.el.style.animation = 'none';
-                }
             }
         }
 
@@ -77,4 +73,3 @@ class Typewriter {
             speed: 100,
             repeat: true,
         });
-        console.log(el1);
