@@ -65,11 +65,15 @@ class Typewriter {
                 if(this.repeat) {
                     await this.initTyping();
                 }
+                else {
+                    this.el.style.animation = 'none';
+                }
             }
         }
 
-        const el1 = new Typewriter(document.querySelector
-        ('[data-typewriter]'), {
+        document.addEventListener('DOMContentLoaded', () => {
+            new Typewriter(document.querySelector('[data-typewriter]'), {
             speed: 100,
             repeat: true,
         });
+    })
